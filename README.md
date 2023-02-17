@@ -1,6 +1,6 @@
 # Dynamic JS
 
-Js class which dynamically changes the values in selected element , on top of that remebers states.
+Experience the power of a dynamic JavaScript class that not only elegantly updates selected element values, but also intelligently recalls previous states.
 
 ## Quick Usage
 
