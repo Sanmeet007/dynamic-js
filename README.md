@@ -1,6 +1,6 @@
 # Dynamic JS
 
-Js class which dynamically changes the values in selected element and on top of that remebers states.
+Js class which dynamically changes the values in selected element , on top of that remebers states.
 
 ## Quick Usage
 
