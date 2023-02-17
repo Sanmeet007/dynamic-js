@@ -57,9 +57,9 @@ h3 {
   gap: 1rem;
 }
 .center::after {
-  color: #2222226a;
+  color: rgba(29, 29, 29, 0.416);
   -webkit-text-stroke-width: 0.3rem;
-  -webkit-text-stroke-color: rgba(40, 40, 40, 0.455);
+  -webkit-text-stroke-color: rgba(29, 29, 29, 0.288);
   position: fixed;
   content: "DYNAMIC JS";
   font-size: 8rem;
