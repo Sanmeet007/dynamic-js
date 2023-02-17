@@ -4,6 +4,7 @@ const buttonClickListener = () => {
     });
 }
 
+
 const app = new DynamicJS("#updatable", {
     times: 0,
 }, () => {
@@ -13,3 +14,11 @@ const app = new DynamicJS("#updatable", {
     // On Unmount clean up  
     document.querySelector("button").removeEventListener("click", buttonClickListener);
 });
+
+
+document.querySelector("#minus").addEventListener("click", () => {
+    app.updateState((obj) => {
+        if (obj.times === 0) return obj;
+        return { times: obj.times - 1 }
+    })
+})
