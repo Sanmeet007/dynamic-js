@@ -3,19 +3,17 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Dynamic text</title>
+    <title>Dynamic JS</title>
     <meta name="color-scheme" content="dark" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <script src="./lib/dynamic.js" type="text/javascript"></script>
   </head>
   <body>
-    <div id="updatable">
-      <q>{{QUOTE}}</q>
-      <br />
-      <h1>{{HEADING}}</h1>
-      <p>
-        My name is {{NAME}} and i am {{AGE}} yrs old . I love to play {{GAME}}
-        and my hobbies include {{HOBBIES}} .
-      </p>
+    <!-- Using Dynamic JS -->
+    <div class="center" id="updatable">
+      <h3>You have clicked button this many times</h3>
+      <h2>{{times}}</h2>
+      <button>+</button>
     </div>
 
     <!-- Using dynamic.js -->

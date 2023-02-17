@@ -1,15 +1,15 @@
-const app = new Template("#updatable", {
-    QUOTE: "Coolest person in world ? ya that's me  :-)",
-    NAME: "sanmeet",
-    GAME: "football",
-    HEADING: "About Me",
-    AGE: 19,
-    HOBBIES: "Coding and doing cool stuff",
-});
-
-setTimeout(function () {
-    app.updateState({
-        GAME: "chess",
-        HEADING: "Really about me ! ",
+const buttonClickListener = () => {
+    app.updateState(obj => {
+        return { times: ++obj.times }
     });
-}, 2000);
+}
+
+const app = new DynamicJS("#updatable", {
+    times: 0,
+}, () => {
+    // On Mount Adding Listeners
+    document.querySelector("button").addEventListener("click", buttonClickListener);
+}, () => {
+    // On Unmount clean up  
+    document.querySelector("button").removeEventListener("click", buttonClickListener);
+});
