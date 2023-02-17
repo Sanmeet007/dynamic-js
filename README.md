@@ -7,7 +7,9 @@ Experience the power of a dynamic JavaScript class that not only elegantly updat
 For usage all you need to do is write your updatable varaible enclosed within `{{var}}`
 
 ```html
-<p>My name is {{name}}</p>
+<div id="updatable">
+    <p>My name is {{name}}</p>
+</div>    
 ```
 
 ```js
